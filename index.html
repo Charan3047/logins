@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Racing | Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            /* Carbon fiber pattern simulation */
+            background-image: 
+                radial-gradient(#222 15%, transparent 16%),
+                radial-gradient(#222 15%, transparent 16%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            text-align: center;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 5rem;
+            font-weight: 900;
+            font-style: italic;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #fff;
+            text-shadow: 4px 4px 0px #ff003c;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ccc;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .login-btn {
+            display: inline-block;
+            background: #ff003c;
+            color: #fff;
+            text-decoration: none;
+            padding: 15px 40px;
+            font-size: 1.5rem;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            transform: skewX(-15deg);
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(255, 0, 60, 0.3);
+        }
+
+        .login-btn:hover {
+            background: transparent;
+            border: 2px solid #ff003c;
+            color: #ff003c;
+            box-shadow: 0 10px 30px rgba(255, 0, 60, 0.6);
+        }
+
+        .login-btn span {
+            display: block;
+            transform: skewX(15deg); /* Counter-skew for text */
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-container">
+        <h1>Apex Racing</h1>
+        <p>Pushing limits. Breaking records.</p>
+        <a href="login.html" class="login-btn">
+            <span>Ignition / Login</span>
+        </a>
+    </div>
+</body>
+</html>

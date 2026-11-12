@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Racing | Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #0a0a0a;
+            background-image: linear-gradient(45deg, #0a0a0a 25%, #111 25%, #111 50%, #0a0a0a 50%, #0a0a0a 75%, #111 75%, #111 100%);
+            background-size: 40px 40px;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-box {
+            background: rgba(20, 20, 20, 0.95);
+            padding: 50px 40px;
+            width: 400px;
+            border-top: 4px solid #ff003c;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.8);
+            transform: skewX(-5deg);
+        }
+
+        .login-content {
+            transform: skewX(5deg); /* Counter-skew */
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        .input-group {
+            margin-bottom: 25px;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #aaa;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 15px;
+            background: #111;
+            border: 1px solid #333;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #ff003c;
+            box-shadow: 0 0 10px rgba(255, 0, 60, 0.2);
+        }
+
+        .submit-btn {
+            width: 100%;
+            background: #ff003c;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: 800;
+            font-style: italic;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background: #d40032;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: #ff003c;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <div class="login-content">
+            <h2>Telemetry Login</h2>
+            <form action="#">
+                <div class="input-group">
+                    <label for="driver-id">Driver ID / Email</label>
+                    <input type="text" id="driver-id" required placeholder="Enter ID">
+                </div>
+                <div class="input-group">
+                    <label for="password">Passcode</label>
+                    <input type="password" id="password" required placeholder="Enter Passcode">
+                </div>
+                <button type="submit" class="submit-btn">Start Engine</button>
+            </form>
+            <a href="index.html" class="back-link">← Back to Pit Lane</a>
+        </div>
+    </div>
+</body>
+</html>
